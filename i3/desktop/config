@@ -196,4 +196,4 @@ exec_always xinput set-prop 9 291 -0.9
 exec numlockx
 exec setxkbmap -option caps:escape
 exec --no-startup-id compton --config ~/.dotfiles/compton/compton.conf -b
-
+exec xset r rate 250 50
