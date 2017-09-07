@@ -44,7 +44,4 @@ filetype plugin indent on    " required
 
 let g:airline_theme='angr'
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
