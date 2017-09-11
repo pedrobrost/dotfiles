@@ -65,7 +65,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_html_checkers = ["validator"]
 "----------------------------------------------"
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
