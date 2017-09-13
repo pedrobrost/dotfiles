@@ -7,7 +7,8 @@ rofi.lines: 5
 rofi.font: Noto Sans 16
 rofi.bw: 0
 rofi.padding: 400
-rofi.eh: 2
+rofi.eh: 1
 rofi.separator-style: none
 rofi.hide-scrollbar: true
 rofi.show-match: false
+rofi.line-padding: 15
