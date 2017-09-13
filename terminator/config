@@ -1,5 +1,6 @@
 [global_config]
   dbus = False
+  inactive_color_offset = 1.0
   title_font = Fira Code 14
   title_use_system_font = False
 [keybindings]
