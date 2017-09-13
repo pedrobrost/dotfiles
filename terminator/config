@@ -1,0 +1,24 @@
+[global_config]
+  dbus = False
+  title_font = Fira Code 14
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_color = "#282c34"
+    cursor_color = "#979CAC"
+    font = Fira Mono Medium 12
+    foreground_color = "#979cac"
+    palette = "#4f4f4f:#af4b57:#afd383:#e5c079:#7d90a4:#a4799d:#85a6a5:#eeedee:#7b7b7b:#af4b57:#ceffab:#fffecc:#b5dcfe:#fb9bfe:#dfdffd:#fefffe"
+    show_titlebar = False
+    use_system_font = False
