@@ -204,7 +204,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 
 exec_always feh --bg-scale /home/pedro/Pictures/rick.png
 exec setxkbmap -option caps:escape
-exec --no-startup-id nm-applet
 exec xfce4-power-manager
 exec --no-startup-id compton --config ~/.dotfiles/compton/compton.conf -b
 exec xset r rate 250 50
