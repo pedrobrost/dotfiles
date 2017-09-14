@@ -35,7 +35,7 @@ line-size = 3
 line-color = #f00
 
 padding-left = 0
-padding-right = 0
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 2
