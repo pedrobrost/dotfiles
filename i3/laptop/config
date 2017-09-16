@@ -202,7 +202,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #i
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
-exec_always feh --bg-scale /home/pedro/Pictures/rick.png
+exec_always feh --bg-scale /home/pedro/Pictures/wallhaven-553333.jpg
 exec setxkbmap -option caps:escape
 exec xfce4-power-manager
 exec --no-startup-id compton --config ~/.dotfiles/compton/compton.conf -b
