@@ -248,11 +248,11 @@ menu-0-0-padding = 3
 menu-0-1-padding = 3
 
 menu-1-0 = reboot?  
-menu-1-0-exec = sudo reboot
+menu-1-0-exec = reboot
 menu-1-0-padding = 3
 
 menu-2-0 = power off?  
-menu-2-0-exec = sudo poweroff
+menu-2-0-exec = poweroff
 menu-2-0-padding = 3
 
 [settings]
