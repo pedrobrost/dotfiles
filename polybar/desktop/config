@@ -194,10 +194,10 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <ramp-volume>  <label-volume>
+format-volume = <label-volume>  <ramp-volume>
 format-muted = <label-muted>
 label-volume = %percentage%
-label-muted =   muted
+label-muted = muted    
 format-volume-padding = 1
 format-muted-padding = 1
 format-volume-underline = #D81B60
