@@ -29,6 +29,11 @@ font pango:Roboto-Regular 11
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+#for_window [class="^.*"] border pixel 3
+
+#gaps inner 25
+#gaps outer 10
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -169,10 +174,10 @@ set $urgent-bg-color     #E53935
 
 # window colors
 # #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+client.focused          $bg-color           $bg-color          $text-color          $bg-color
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color  $bg-color
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color  $bg-color
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $bg-color
 
 hide_edge_borders both
 
@@ -198,7 +203,7 @@ bindsym Print exec scrot '%Y%m%d_%H%M%S.png' -e 'mv $f ~/Pictures/screenshots/'
 
 bindsym $mod+g exec google-chrome
 
-exec_always feh --bg-scale /home/pedro/Pictures/ram.png
+exec_always feh --bg-scale /home/pedro/Pictures/wallhaven-553333.jpg
 exec_always xinput set-prop 9 291 -0.9
 exec numlockx
 exec setxkbmap -option caps:escape
