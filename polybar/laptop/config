@@ -45,7 +45,7 @@ font-1 = "FontAwesome:pixelsize=12;2"
 
 modules-left = i3
 modules-center = 
-modules-right = memory cpu temperature volume date powermenu
+modules-right = memory cpu temperature battery volume date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -194,10 +194,10 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <ramp-volume>  <label-volume>
+format-volume = <label-volume>  <ramp-volume>
 format-muted = <label-muted>
 label-volume = %percentage%
-label-muted =   muted
+label-muted = muted    
 format-volume-padding = 1
 format-muted-padding = 1
 format-volume-underline = #D81B60
@@ -265,5 +265,19 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 98
+
+format-charging = <label-charging>  
+format-charging-underline = #00E676
+format-charging-padding = 1
+
+format-discharging = <label-discharging>  
+format-discharging-underline = #00E676
+format-discharging-padding = 1
 
 ; vim:ft=dosini
