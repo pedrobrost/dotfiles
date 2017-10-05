@@ -209,3 +209,4 @@ exec numlockx
 exec setxkbmap -option caps:escape
 exec --no-startup-id compton --config ~/.dotfiles/compton/compton.conf -b
 exec xset r rate 250 50
+exec fluxgui
