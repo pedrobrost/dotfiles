@@ -117,3 +117,5 @@ map zg/ <Plug>(incsearch-easymotion-stay)
 set updatetime=250
 
 set t_RV=
+
+set pastetoggle=<F3>
