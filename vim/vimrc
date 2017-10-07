@@ -115,3 +115,5 @@ map z? <Plug>(incsearch-easymotion-?)
 map zg/ <Plug>(incsearch-easymotion-stay)
 
 set updatetime=250
+
+set t_RV=
