@@ -39,6 +39,8 @@ Plugin 'haya14busa/incsearch-easymotion.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'mhinz/vim-startify'
+Plugin 'lumiliet/vim-twig'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
