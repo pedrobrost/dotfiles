@@ -102,8 +102,13 @@ let g:syntastic_check_on_wq = 0
 " ----------------------------------------------------------------------------- "
 "                                  Indentation                                  "
 " ----------------------------------------------------------------------------- "
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-set number
+"set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+"set number
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
+filetype plugin indent on
 
 " ----------------------------------------------------------------------------- "
 "                                   General                                     "
