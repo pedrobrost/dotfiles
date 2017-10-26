@@ -1,3 +1,6 @@
+" ----------------------------------------------------------------------------- "
+"                                    Vundle                                     "
+" ----------------------------------------------------------------------------- "
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -10,21 +13,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
@@ -39,7 +28,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'mhinz/vim-startify'
 Plugin 'lumiliet/vim-twig'
 
-" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -52,26 +40,11 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
+" ----------------------------------------------------------------------------- "
+"                                Color Schemes                                  "
+" ----------------------------------------------------------------------------- "
 let g:airline_theme='onedark'
-
-map <C-n> :NERDTreeToggle<CR>
-
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-set number
-
-"Syntastic"
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-"----------------------------------------------"
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -110,10 +83,32 @@ end
 
 colorscheme onedark
 
+" ----------------------------------------------------------------------------- "
+"                            Plugin Configurations                              "
+" ----------------------------------------------------------------------------- "
+"NERDTree""
+map <C-n> :NERDTreeToggle<CR>
+
+"Syntastic"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" ----------------------------------------------------------------------------- "
+"                                  Indentation                                  "
+" ----------------------------------------------------------------------------- "
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set number
+
+" ----------------------------------------------------------------------------- "
+"                                   General                                     "
+" ----------------------------------------------------------------------------- "
 set updatetime=250
-
 set t_RV=
-
 set pastetoggle=<F3>
-
 set relativenumber
