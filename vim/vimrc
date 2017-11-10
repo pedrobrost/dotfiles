@@ -117,3 +117,4 @@ set updatetime=250
 set t_RV=
 set pastetoggle=<F3>
 set relativenumber
+let g:ycm_server_python_interpreter = '/usr/bin/python'
