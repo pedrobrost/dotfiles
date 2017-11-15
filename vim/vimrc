@@ -25,8 +25,6 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'mhinz/vim-startify'
-Plugin 'lumiliet/vim-twig'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -116,6 +114,7 @@ filetype plugin indent on
 set updatetime=250
 set t_RV=
 set pastetoggle=<F3>
-set relativenumber
-set clipboard=unnamedplus
+set number
+"set relativenumber
+"set clipboard=unnamedplus
 let g:ycm_server_python_interpreter = '/usr/bin/python'
